@@ -60,6 +60,8 @@ function generateMarkdown(data) {
   ${data.username}.
   - Github Username:
   ${data.githubUser}
+  - Link to github profile:
+  https://github.com/${data.githubUser}
   - Professional email:
   ${data.email}
 

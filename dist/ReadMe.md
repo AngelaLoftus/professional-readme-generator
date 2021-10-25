@@ -1,4 +1,4 @@
-# Title: Application Test
+# Title: test
 
   # Table of Contents
   
@@ -14,28 +14,30 @@
   
   ## Description
   * A description of the application:
-  - This is a test of the readme generator.
+  - test
   ## Installation
   * Instructions to install application:  
-  - Install using npm install and npm install inquirer.
+  - test
   ## Usage
   * Instructions on how to use application: 
   - undefined
   ## Contributions
   * How to contribute to this project: 
-  - This project is a test and does not need contributions.
+  - test
   ## Testing
   * Instructions for testing this project: 
-  - You can try entering different info into the command line to test.
+  - test
   ## License
   * The license for this project is: 
-  - MIT license
+  - GNU General Public License (GPL)
   ## Questions
   If you have questions about this project or about software in general, please contact me.
   My name is:
-  Angela Loftus.
+  angelaloftus.
   - Github Username:
   AngelaLoftus
+  - Link to github profile:
+  https://github.com/AngelaLoftus
   - Professional email:
   angelaloftus@yahoo.com
 
