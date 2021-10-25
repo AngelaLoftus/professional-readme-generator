@@ -1,12 +1,11 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application to work
 const inquirer = require('inquirer');
 const fs = require('fs')
+const generateMarkdown = require('./utils/generateMarkdown')
 
 
-
-// TODO: Create an array of questions for user input
+// Array of questions for user input using inquirer npm package
 const questions = [
-inquirer.prompt([
     {   type: "input",
         name: "title",
         message: "What is the title of your project?"
@@ -24,7 +23,7 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "usage instructions",
+        name: "usageInstructions",
         message: "Please enter instructions on how to use your project."
     },
     {   
@@ -41,11 +40,22 @@ inquirer.prompt([
         type: "list",
         name: "license",
         message: "Please select your licensing from the following",
-        choices: ["1", "2", "3", "4"]
+        choices: ["Apache License 2.0", "BSD 3-Clause New or Revised license",
+            "GNU General Public License (GPL)",
+            "GNU Library or 'Lesser' General Public License (LGPL)",
+            "MIT license",
+            "Mozilla Public License 2.0",
+            "Common Development and Distribution License",
+            "Eclipse Public License version 2.0]"]
+    },
+    {
+        type: "input",
+        name: "username",
+        message: "please enter your name"
     },
     {   
         type: "input",
-        name: "github user",
+        name: "githubUser",
         message: "Please enter your github username."
     },
     {
@@ -53,33 +63,35 @@ inquirer.prompt([
         name: "email",
         message: "Please enter your professional email address."
     }
-]) ];;
+];
 
-// // TODO: Create a function to write README file
-// function writeToFile (fileName, data) {
-//     fs.writeFile(fileName, data, err => {
-//         if (err) {
-//             console.log(err);
-//         }
-//         console.log("readme created!");
 
-//     })
+// Function that will write the readme file using fs 
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if(err) {
+            return console.log(err);
+        }
+        console.log("Readme file was created successfully.");
+    });
+};
 
-// // }
+// Function that initializes the inquirer prompt 
+//and feeds the responses into the generate markdown function
+function init() {
+    inquirer.prompt(questions)
+    .then (answers => generateMarkdown(answers))
+    .then( readme => {
+        console.log(readme);
+        writeToFile('./dist/ReadMe.md', readme, err => {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            console.log("Readme created by you the user.");
+        })
+    }).catch( err => console.log(err));  
+};
 
-// // // TODO: Create a function to initialize app
-// function init() {
-//     inquirer.prompt(questions).then ( response => {
-//     writeToFile('./dist/readme.md', readme, err => {
-//         if (err) {
-//             console.log(err);
-//         }
-//         console.log("Readme file was written!");
-//     }  )
-//     console.log("test")
-// })
-// }
-
-// // // Function call to initialize app
-// init();
-
+//Function call to initialize the application and call the prompts
+init();
