@@ -34,11 +34,11 @@
 # Important Links
 
 - Link to sample readme within Github
-    [Sample Readme](google.com)
+- [Sample Readme](https://github.com/AngelaLoftus/professional-readme-generator/blob/main/dist/ReadMe.md) 
 - Link to github repository
-    [Repository ](https://github.com/AngelaLoftus/professional-readme-generator) 
-- Link to walkthrough Video
-    [Walkthrough Video](google.com)
+- [Repository ](https://github.com/AngelaLoftus/professional-readme-generator) 
+- Link to Walkthrough Video
+- [Walkthrough Video](google.com)
 
 # Screenshots of Application 
 - Screenshots to demonstrate purpose of application and final product. 

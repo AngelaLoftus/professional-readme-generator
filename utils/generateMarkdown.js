@@ -34,6 +34,7 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Questions](#questions)
       - Github username
+      - Link to Github profile
       - Professional email
   
   ## Description
@@ -44,7 +45,7 @@ function generateMarkdown(data) {
   - ${data.installation}
   ## Usage
   * Instructions on how to use application: 
-  - ${data.usage}
+  - ${data.usageInstructions}
   ## Contributions
   * How to contribute to this project: 
   - ${data.contributions}

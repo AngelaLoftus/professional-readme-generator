@@ -51,7 +51,7 @@ const questions = [
     {
         type: "input",
         name: "username",
-        message: "please enter your name"
+        message: "please enter your name."
     },
     {   
         type: "input",
