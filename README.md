@@ -43,6 +43,10 @@
 # Screenshots of Application 
 - Screenshots to demonstrate purpose of application and final product. 
 
+![Screenshot](https://github.com/AngelaLoftus/professional-readme-generator/blob/main/assets/CommandLineScreenshot.jpg) 
+![Screenshot](https://github.com/AngelaLoftus/professional-readme-generator/blob/main/assets/SampleReadMeScreenshot.jpg) 
+![Screenshot](https://github.com/AngelaLoftus/professional-readme-generator/blob/main/assets/VSCodeScreenshot.jpg)
+
 # Contact Me
 - Name: Angela Loftus
 - Github profile: https://github.com/AngelaLoftus 
