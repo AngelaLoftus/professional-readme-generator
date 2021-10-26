@@ -11,7 +11,7 @@
 
 * GIVEN a command-line application that accepts user input
 - WHEN user is prompted for information about their application repository
-- THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+- THEN a high-quality, professional README.md is generated with the title of their project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 - WHEN user enters their project title
 - THEN this is displayed as the title of the README
@@ -38,7 +38,7 @@
 - Link to github repository
 - [Repository ](https://github.com/AngelaLoftus/professional-readme-generator) 
 - Link to Walkthrough Video
-- [Walkthrough Video](google.com)
+- [Walkthrough Video](https://watch.screencastify.com/v/PKtP9rb9w1xEWeah15lC)
 
 # Screenshots of Application 
 - Screenshots to demonstrate purpose of application and final product. 
